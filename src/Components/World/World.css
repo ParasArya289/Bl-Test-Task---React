@@ -1,0 +1,51 @@
+.world {
+  text-align: start;
+  background-color: white;
+  padding-inline: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .worldContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .worldstats {
+    text-align: start;
+    display: flex;
+    gap: 10px;
+    .value {
+      font-weight: 700;
+    }
+    .country {
+      color: grey;
+      font-weight: 500;
+    }
+  }
+  .piechart {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    .totalcase {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-62%, -62%);
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background-color: white;
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+      border-radius: 99999px;
+      div {
+        font-size: 0.5rem;
+        color:grey
+      }
+    }
+  }
+}
