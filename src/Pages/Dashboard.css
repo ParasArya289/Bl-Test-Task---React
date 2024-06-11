@@ -66,9 +66,37 @@
     align-items: center;
     gap: 10px;
   }
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .containerone {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+    }
+    .containertwo {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+@media (width < 950px) {
+  .cards {
+    flex-wrap: wrap;
+  }
 }
 @media (width < 800px) {
-  .cards{
-    flex-wrap: wrap;
+  .dashboard {
+    .container {
+      flex-direction: column;
+    }
+    header {
+      .input {
+        display: none;
+      }
+    }
   }
 }

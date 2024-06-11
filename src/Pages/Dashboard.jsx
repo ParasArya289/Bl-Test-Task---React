@@ -6,6 +6,10 @@ import { MdOutlineNotifications } from "react-icons/md";
 import { RxExit } from "react-icons/rx";
 import Layout from "../Components/Layout/Layout";
 import CardWithLineChart from "../Components/CardWithLineChart/CardWithLineChart";
+import Stats from "../Components/Stats/Stats";
+import World from "../Components/World/World";
+import LiveUpdate from "../Components/LiveUpdate/LiveUpdate";
+import Symptoms from "../Components/Symptoms/Symptoms";
 
 const Dashboard = () => {
   return (
@@ -36,31 +40,43 @@ const Dashboard = () => {
           </div>
         </header>
         <div className="container">
-          <div className="cards">
-            <CardWithLineChart
-              name="Cases"
-              stroke="#51C0D8"
-              fill="
+          <div className="containerone">
+            <div className="cards">
+              <CardWithLineChart
+                name="Cases"
+                stroke="#51C0D8"
+                fill="
            #CEF2F9"
-              percentage="23"
-              number="1,218,087"
-            />
-             <CardWithLineChart
-              name="Deaths"
-              stroke="#D44C42"
-              fill="
+                percentage="23"
+                number="1,218,087"
+              />
+              <CardWithLineChart
+                name="Deaths"
+                stroke="#D44C42"
+                fill="
               #FCE8E1"
-              percentage="19"
-              number="65,841"
-            />
-             <CardWithLineChart
-              name="Recovered"
-              stroke="#93BE51"
-              fill="#E8F4D5
+                percentage="19"
+                number="65,841"
+              />
+              <CardWithLineChart
+                name="Recovered"
+                stroke="#93BE51"
+                fill="#E8F4D5
            "
-              percentage="15"
-              number="253,817"
-            />
+                percentage="15"
+                number="253,817"
+              />
+            </div>
+            <div className="stats">
+              <Stats />
+            </div>
+            <div className="worldstats">
+              <World />
+            </div>
+          </div>
+          <div className="containertwo">
+            <LiveUpdate />
+            <Symptoms />
           </div>
         </div>
       </div>
