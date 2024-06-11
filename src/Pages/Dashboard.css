@@ -70,16 +70,18 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    .containerone {
+    .flex {
       display: flex;
       flex-direction: column;
       gap: 20px !important;
+    }
+    .containerone {
       flex: 1;
     }
     .containertwo {
-      display: flex;
+      /* display: flex;
       flex-direction: column;
-      gap: 20px !important;
+      gap: 20px !important; */
     }
   }
 }

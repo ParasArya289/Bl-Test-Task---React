@@ -40,7 +40,7 @@ const Dashboard = () => {
           </div>
         </header>
         <div className="container">
-          <div className="containerone">
+          <div className="containerone flex">
             <div className="cards">
               <CardWithLineChart
                 name="Cases"
@@ -74,7 +74,7 @@ const Dashboard = () => {
               <World />
             </div>
           </div>
-          <div className="containertwo">
+          <div className="containertwo flex">
             <LiveUpdate />
             <Symptoms />
           </div>
