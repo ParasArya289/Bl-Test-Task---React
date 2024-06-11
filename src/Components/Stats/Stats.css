@@ -1,0 +1,20 @@
+.bar {
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-block: 20px;
+  .barchart {
+    height: 250px;
+  }
+  .statsinfo {
+    text-align: start;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    div {
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+  }
+}
