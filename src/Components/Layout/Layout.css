@@ -13,7 +13,7 @@
     overflow-x: hidden;
   }
 }
-@media (width < 800px) {
+@media (width < 950px) {
   .layout {
     flex-direction: column-reverse;
   }
