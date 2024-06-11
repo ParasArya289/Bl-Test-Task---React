@@ -73,13 +73,13 @@
     .containerone {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 20px !important;
       flex: 1;
     }
     .containertwo {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 20px !important;
     }
   }
 }
