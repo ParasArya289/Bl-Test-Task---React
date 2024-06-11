@@ -1,0 +1,43 @@
+.liveupdate {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 20px;
+  text-align: start;
+  height: 100%;
+  .heading {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  span {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .livecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .circle {
+      display: block;
+      height: 15px;
+      width: 15px;
+      border-radius: 99999px;
+      background-color: black;
+    }
+    .newcase {
+      background-color: #4dc2f7;
+    }
+    .firstcase {
+      background-color: #ed3833;
+    }
+  }
+}
