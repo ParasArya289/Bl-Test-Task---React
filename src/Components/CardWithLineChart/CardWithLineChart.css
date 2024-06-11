@@ -1,0 +1,29 @@
+.cardlinechart {
+  width: 100%;
+  text-align: start;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  .linechart{
+    height:100px;
+  }
+  .cardinfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    div {
+      font-size: 1.8rem;
+      font-weight: 700;
+      div {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: black;
+      }
+    }
+    span {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+  }
+}

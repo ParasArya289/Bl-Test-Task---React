@@ -1,0 +1,35 @@
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+  /* height: 100%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #3530ae;
+  /* border-radius: 30px; */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .active {
+    background-color: white;
+    color: tomato;
+  }
+  svg {
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+}
+@media (width < 800px) {
+  .navbar {
+    flex-direction: row;
+    .links {
+      flex-direction: row;
+    }
+  }
+}

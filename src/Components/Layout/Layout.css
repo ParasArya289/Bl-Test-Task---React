@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  height: 100dvh;
+  .children {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    background-color: #F9FEFF;
+    flex-basis: 100%;
+  }
+}
+@media (width < 800px) {
+    .layout{
+        flex-direction: column-reverse;
+    }
+}

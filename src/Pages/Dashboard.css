@@ -1,0 +1,74 @@
+.dashboard {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .brand {
+      text-align: start;
+      div {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #603fd7;
+      }
+      div:nth-child(2) {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: grey;
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      padding-inline: 10px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+      input {
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+    }
+    .more {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .user {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        svg {
+          color: grey;
+        }
+        img {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .divider {
+        height: 40px;
+        width: 1px;
+        background-color: rgba(128, 128, 128, 0.3);
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        svg {
+          color: grey;
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (width < 800px) {
+  .cards{
+    flex-wrap: wrap;
+  }
+}
