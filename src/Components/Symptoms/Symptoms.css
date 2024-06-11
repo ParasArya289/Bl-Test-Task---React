@@ -1,0 +1,50 @@
+.symptomscarousel {
+  box-sizing: border-box;
+  background-color: #6549f6;
+  border-radius: 20px;
+  max-width: 300px;
+  padding: 20px;
+  text-align: start;
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .symptomsheading {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 99999px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+    span {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+  .pill {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 9999px;
+    margin-right: 3px;
+    background-color: rgba(181, 181, 181, 0.8);
+    cursor: pointer;
+  }
+  .activepill {
+    background-color: white;
+  }
+}
+@media (width < 800px) {
+  .symptomscarousel {
+    max-width: unset;
+  }
+}
